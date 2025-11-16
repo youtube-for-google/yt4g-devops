@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:stack": "concurrently -n backend,feed -c yellow,cyan \"cd ../yt4g-backend && npm run dev\" \"cd ../yt4g-feed && npm run dev\""
+    "dev:stack": "concurrently -n backend,feed,shell -c yellow,cyan,magenta \"cd ../yt4g-backend && npm run dev\" \"cd ../yt4g-feed && npm run dev\" \"cd ../yt4g-shell && npm run dev\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.0.0"
   }
 }
